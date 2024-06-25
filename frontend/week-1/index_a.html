@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Login</title>
+    <link rel="stylesheet" href="styles_a.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">MyStore</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Login/Sign Up</h2>
+            <div class="form-container">
+                <form id="login-form">
+                    <input type="text" placeholder="Username" required aria-label="Username">
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <div class="toggle-box">
+                        <label>
+                            <input type="radio" name="user-type" value="cashier" aria-label="Cashier">
+                            Cashier
+                        </label>
+                        <label>
+                            <input type="radio" name="user-type" value="admin" aria-label="Admin">
+                            Admin
+                        </label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                    <div class="social-login">
+                        <button type="button" class="google">Login with Google</button>
+                        <button type="button" class="facebook">Login with Facebook</button>
+                        <button type="button" class="microsoft">Login with Microsoft</button>
+                    </div>
+                </form>
+                <form id="signup-form" style="display:none;">
+                    <input type="number" placeholder="Mobile number" required aria-label="Mobile number">
+                    <input type="email" placeholder="Email" required aria-label="Email">
+                    <input type="text" placeholder="Staff-ID" required aria-label="id">
+                    <input type="password" placeholder="Password" required aria-label="Password">
+                    <input type="password" placeholder="Confirm Password" required aria-label="Confirm Password">
+                    <button type="submit">Sign Up</button>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script_a.js"></script>
+</body>
+</html>
+
+
